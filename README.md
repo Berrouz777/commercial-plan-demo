@@ -32,7 +32,16 @@ commercial-plan-demo/
 │   ├── CommercialPlan.vue                    # Основной компонент
 │   ├── ui/                                   # UI компоненты (кнопки, аккордеон)
 │   ├── common/                               # Общие компоненты
-│   └── pages/                                # Связанные компоненты
+│   └── pages/
+│       └── flats/genplan/                    # Компоненты генплана
+│           ├── Genplan.vue                   # Компонент-роутер генплана
+│           ├── GenplanCommercial.vue         # Компонент коммерческих помещений
+│           ├── GenplanCommercialHover.vue    # Обработка hover и анимация линий
+│           ├── GenplanCommercialTooltip.vue   # Тултип с информацией
+│           ├── GenplanCommercialBuildings.vue # Список зданий
+│           ├── GenplanCommercialIcons.vue    # Иконки категорий
+│           ├── GenplanCompass.vue            # Компас на карте
+│           └── GenplanSvgDefs.vue            # SVG градиенты
 └── store/
     └── line-animate.js                       # Vuex модуль для управления анимациями
 ```
@@ -46,4 +55,4 @@ commercial-plan-demo/
 
 ## Примечание
 
-⚠️ Этот репозиторий создан исключительно для демонстрации кода и архитектуры компонента. Компонент не предназначен для запуска в изоляции, так как требует полной инфраструктуры проекта. Компонент уже работает в продакшене на [beregovoy-kvartal.ru/commercial](https://beregovoy-kvartal.ru/commercial).
+⚠️ Этот репозиторий создан исключительно для демонстрации кода и архитектуры компонента. Компонент не предназначен для запуска в изоляции, так как требует полной инфраструктуры проекта (Nuxt.js, плагины, миксины, глобальные стили). Компонент уже работает в продакшене на [beregovoy-kvartal.ru/commercial](https://beregovoy-kvartal.ru/commercial).

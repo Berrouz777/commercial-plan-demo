@@ -77,12 +77,6 @@
 </template>
 
 <script>
-// Примечание: Это упрощенная версия компонента Genplan.
-// Оригинальный компонент использует множество зависимостей:
-// - GenplanLot, GenplanFloor, GenplanPhase, GenplanBuildings, GenplanCommercial, GenplanPhaseParameters
-// - Каждый из этих компонентов также имеет свои зависимости
-// Для демонстрации архитектуры показана структура компонента-роутера
-
 import GenplanLot from '@/components/pages/flats/genplan/GenplanLot';
 import GenplanFloor from '@/components/pages/flats/genplan/GenplanFloor';
 import GenplanPhase from '@/components/pages/flats/genplan/GenplanPhase';
